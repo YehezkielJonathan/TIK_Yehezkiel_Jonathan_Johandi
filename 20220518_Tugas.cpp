@@ -1,33 +1,17 @@
+
 #include <iostream>
-#include <math.h>
 using namespace std;
-int main()
-{
-	int x,y;
-	float nilai;
-	string c[5] = {"","detik","menit","jam","hari"};
-	cout<<"Pilih Satuan awal"<<endl;
-	cout<<"1. detik"<<endl;
-	cout<<"2. menit"<<endl;
-	cout<<"3. jam"<<endl;
-	cout<<"4. hari"<<endl;
-	cout<<"Pilih satuan: ";
-	cin>>x;
-	cout<<"Masukan nilai: ";cin>>nilai;
-	cout<<"Pilih Konversi"<<endl;
-	cout<<"1. detik"<<endl;
-	cout<<"2. menit"<<endl;
-	cout<<"3. jam"<<endl;
-	cout<<"4. hari"<<endl;
-	cout<<"Pilih konversi: ";
-	cin>>y;
-	if(x<y){
-		int temp = y-x;
-		cout<<"Hasil: "<<nilai/pow(60,temp)<<" "<<c[y];
-	}else if(x>y){
-		int temp = x-y;
-		cout<<"Hasil: "<<nilai*pow(60,temp)<<" "<<c[y];
-	}else if(x==y){
-		cout<<"Hasil: "<<nilai<<" "<<c[x];
-	}
+
+int main(){
+	float aray[4];
+	float tambah;
+	float mean;
+	cout<<"Array ke - 1 = ";cin>>aray[0];
+    cout<<"Array ke - 2 = ";cin>>aray[1];
+	cout<<"Array ke - 3 = ";cin>>aray[2];
+	cout<<"Array ke - 4 = ";cin>>aray[3];
+	cout<<"Array ke - 5 = ";cin>>aray[4];
+	tambah = aray[0]+aray[1]+aray[2]+aray[3]+aray[4];
+	mean = tambah/5;
+	cout<<"Mean = "<<mean;
 }
